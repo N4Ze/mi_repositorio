@@ -152,7 +152,33 @@ footer .social a {
 	padding:10px;
 	display: inline-block;
 }
-
+/* ANIMACION */
+#transformacion{
+	animation-duration: 2s;
+	animation-name: aparecer;
+	animation-iteration-count: initial;
+ }
+ 
+ 
+ @keyframes aparecer {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+ }
+  
+ /* TRANSICION */
+  section a:hover{
+	  transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+	height: 100px; width: 100px;
+	padding: 20px;
+	background-color: cyan;
+	text-align: center;
+ }
+ 
+/*  Media Queries */
 @media screen and (max-width: 600px) {
 	.contenedor {
 		flex-direction:column;
